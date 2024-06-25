@@ -1,18 +1,21 @@
 .wrapper {
   display: flex;
   padding: 1.25rem;
+  align-items: flex-start;
   gap: 1.25rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
+  height: 100%;
 }
 
 .wrapper aside {
   width: 300px;
   padding: 1.25rem;
   background: var(--gray-600);
+  height: 100%;
 }
 
 .wrapper main {
-  width: 100%;
+  flex: 1;
   padding: 1.25rem;
   background: var(--gray-800);
 }

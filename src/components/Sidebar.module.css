@@ -1,0 +1,19 @@
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--gray-200);
+  display: block;
+  background-color: var(--gray-700);
+  padding: 1.25rem;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background-color: var(--gray-800);
+}
