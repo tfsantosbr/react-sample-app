@@ -1,0 +1,20 @@
+.login {
+  background-color: var(--gray-700);
+  width: 500px;
+  margin: 30vh auto 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.login a {
+  display: block;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--gray-200);
+  background-color: var(--gray-600);
+}
+
+.login a:hover {
+  background-color: var(--gray-800);
+}

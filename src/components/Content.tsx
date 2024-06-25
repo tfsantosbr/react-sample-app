@@ -1,3 +1,3 @@
 export function Content() {
-  return <main>main</main>;
+  return <main>Main Content</main>;
 }
