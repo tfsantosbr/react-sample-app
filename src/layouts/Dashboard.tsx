@@ -1,8 +1,8 @@
 import styles from "./Dashboard.module.css";
 
-import { Content } from "./Content";
-import { Header } from "./Header";
-import { Sidebar } from "./Sidebar";
+import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
+import { Outlet } from "react-router-dom";
 
 export function Dashboard() {
   return (
@@ -10,7 +10,9 @@ export function Dashboard() {
       <Header />
       <div className={styles.wrapper}>
         <Sidebar />
-        <Content />
+        <main>
+          <Outlet />
+        </main>
       </div>
     </>
   );

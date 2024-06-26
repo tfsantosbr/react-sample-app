@@ -8,3 +8,4 @@
 ## Bibliotecas
 
 - [date-fns](https://date-fns.org/) - Formatação de datas
+- [react-router](https://github.com/remix-run/react-router) - Gerenciador de rotas para o react

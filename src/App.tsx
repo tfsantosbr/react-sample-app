@@ -1,6 +1,12 @@
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router";
+
 import "./assets/global.css";
-import { Login } from "./components/Login";
 
 export function App() {
-  return <Login />;
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
