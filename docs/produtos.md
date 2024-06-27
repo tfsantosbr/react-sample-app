@@ -6,12 +6,12 @@
 |-----------------------|---------------------------|
 | ID                    | Somente Leitura           |
 | Nome                  | Text                      |
-| Descrição             | Textarea                  |
 | Categoria             | Select                    |
+| Descrição             | Textarea                  |
 | Preço                 | Numérico com Decimal      |
-| Imagens               | Arquivo (Aba separada)    |
 | Data de Fabricação    | Data                      |
 | Ativo                 | Checkbox                  |
+| Imagens               | Arquivo (Aba separada)    |
 
 - Cadastrar
 - Cancelar

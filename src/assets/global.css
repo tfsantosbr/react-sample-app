@@ -1,10 +1,15 @@
 :root {
   --white: rgb(255, 255, 255);
   --gray-300: rgb(176, 176, 176);
+  --gray-400: rgb(100, 100, 100);
+  --gray-500: rgb(80, 80, 80);
   --gray-600: rgb(60, 60, 60);
   --gray-700: rgb(50, 50, 50);
   --gray-800: rgb(35, 35, 35);
   --gray-900: rgb(18, 18, 18);
+  --green-500: rgb(0, 110, 0);
+  --green-600: rgb(0, 90, 0);
+  --green-700: rgb(0, 61, 0);
 }
 
 * {
@@ -29,6 +34,95 @@ body {
 body,
 input,
 textarea,
+select,
 button {
   font: 400 1rem "Roboto", sans-serif;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+fieldset legend {
+  width: 100%;
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--gray-500);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper label {
+  display: block;
+  color: var(--gray-400);
+}
+
+.input-wrapper input:not([type="checkbox"]),
+.input-wrapper textarea,
+.input-wrapper select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--gray-500);
+  border-radius: 0.25rem;
+  background: var(--gray-600);
+  color: var(--gray-300);
+}
+
+.input-wrapper textarea {
+  height: 5rem;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkbox-wrapper label {
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.actions-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.actions-wrapper button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: var(--gray-700);
+  color: var(--gray-300);
+  cursor: pointer;
+  width: 18rem;
+}
+
+.actions-wrapper button:hover {
+  background: var(--gray-600);
+}
+
+.actions-wrapper button:disabled {
+  background: var(--gray-700);
+  color: var(--gray-500);
+  cursor: not-allowed;
+}
+
+.actions-wrapper button[type="submit"] {
+  background: var(--green-600);
+  color: var(--white);
+}
+
+.actions-wrapper button[type="submit"]:hover {
+  background: var(--green-500);
+}
+
+.actions-wrapper button[type="submit"]:disabled {
+  background: var(--green-700);
+  color: var(--green-600);
+  cursor: not-allowed;
 }
