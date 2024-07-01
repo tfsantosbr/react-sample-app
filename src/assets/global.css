@@ -112,12 +112,23 @@ fieldset legend {
   cursor: not-allowed;
 }
 
-.actions-wrapper button[type="submit"] {
+.actions-wrapper .action-button {
+  display: block;
+  text-decoration: none;
+  width: 12.5rem;
+  text-align: center;
+  padding: 0.5625rem;
+  border-radius: 0.1875rem;
+}
+
+.actions-wrapper button[type="submit"],
+.actions-wrapper .action-button {
   background: var(--green-600);
   color: var(--white);
 }
 
-.actions-wrapper button[type="submit"]:hover {
+.actions-wrapper button[type="submit"]:hover,
+.actions-wrapper .action-button:hover {
   background: var(--green-500);
 }
 
@@ -125,4 +136,100 @@ fieldset legend {
   background: var(--green-700);
   color: var(--green-600);
   cursor: not-allowed;
+}
+
+.report-wrapper h1 {
+  width: 100%;
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--gray-500);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+
+.filter-wrapper input:not([type="checkbox"]),
+.filter-wrapper textarea,
+.filter-wrapper select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--gray-500);
+  border-radius: 0.25rem;
+  background: var(--gray-600);
+  color: var(--gray-300);
+}
+
+.filter-wrapper textarea {
+  height: 5rem;
+}
+
+.filter-wrapper button[type="submit"] {
+  width: 10rem;
+  height: 2.3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid var(--gray-600);
+  text-align: left;
+}
+
+th {
+  background-color: var(--gray-700);
+}
+
+table .actions {
+  width: 8rem;
+  text-align: center;
+}
+
+table .actions a {
+  padding: 0 5px;
+  color: var(--gray-400);
+  text-decoration: none;
+}
+
+table .actions a:hover {
+  color: var(--gray-300);
+}
+
+.pagination {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination a {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--gray-700);
+  color: var(--gray-300);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background: var(--gray-600);
+}
+
+.pagination a:hover {
+  background: var(--gray-600);
+}
+
+.right {
+  margin-left: auto;
 }

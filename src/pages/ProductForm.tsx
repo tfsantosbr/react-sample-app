@@ -11,10 +11,8 @@ export function ProductForm() {
 
         <div className="input-wrapper">
           <label htmlFor="categoryId">Categoria:</label>
-          <select id="categoryId">
-            <option value="" selected>
-              Selecionar
-            </option>
+          <select id="categoryId" defaultValue="">
+            <option value="">Selecionar</option>
             <option value="1">Categoria 1</option>
             <option value="2">Categoria 2</option>
             <option value="3">Categoria 3</option>
