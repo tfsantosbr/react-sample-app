@@ -5,12 +5,14 @@ import { ProductList } from "./pages/ProductList";
 import { ProductForm } from "./pages/ProductForm";
 import { CategoriesList } from "./pages/CategoriesList";
 import { CategoriesForm } from "./pages/CategoriesForm";
+import { Home } from "./pages/Home";
 
 export function Router() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/admin" element={<Dashboard />}>
+        <Route path="" element={<Home />} />
         <Route path="products" element={<ProductList />} />
         <Route path="products/create" element={<ProductForm />} />
         <Route path="products/edit" element={<ProductForm />} />

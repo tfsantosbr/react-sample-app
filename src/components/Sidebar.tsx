@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 
 export function Sidebar() {
@@ -5,12 +6,12 @@ export function Sidebar() {
     <aside>
       <ul className={styles.navigation}>
         <li>
-          <a href="#" className={styles.active}>
+          <NavLink to="/admin/products" className={styles.active}>
             Produtos
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#">Categorias</a>
+          <NavLink to="/admin/categories">Categorias</NavLink>
         </li>
       </ul>
     </aside>

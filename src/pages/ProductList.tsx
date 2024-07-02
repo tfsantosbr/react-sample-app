@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export function ProductList() {
   return (
     <div className="report-wrapper">
@@ -22,9 +24,9 @@ export function ProductList() {
         </div>
 
         <div className="actions-wrapper right">
-          <a href="#" className="action-button">
+          <NavLink to="/admin/products/create" className="action-button">
             Novo Produto
-          </a>
+          </NavLink>
         </div>
       </form>
 
